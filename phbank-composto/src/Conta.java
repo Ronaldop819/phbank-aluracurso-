@@ -2,7 +2,7 @@
 class Conta {
 	
 	//atributos
-	double saldo;
+	private double saldo;
 	int agencia;
 	int numero;
 	Cliente titular;
@@ -35,5 +35,10 @@ class Conta {
 		
 		return false;
 	}
+	
+		public double pegaSaldo() {
+			return this.saldo;
+			
+		}
 	
 }
