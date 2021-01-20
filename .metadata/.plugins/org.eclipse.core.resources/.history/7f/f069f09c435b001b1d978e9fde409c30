@@ -15,16 +15,8 @@ public class TestaMetodo {
 		Conta contaDaMarcela = new Conta();
 		contaDaMarcela.deposita(1000);
 		
-		if(contaDaMarcela.transfere(300, contaDoRonaldo)) {
-			System.out.println("Transferência realizada com sucesso");
-			
-		} else {
-			
-			System.out.println("Saldo insuficiente!");
-		}
-		
+		contaDaMarcela.transfere(300, contaDoRonaldo);
 		System.out.println(contaDaMarcela.saldo);
-		System.out.println(contaDoRonaldo.saldo);
 
 	}
 
