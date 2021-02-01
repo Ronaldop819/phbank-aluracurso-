@@ -15,11 +15,14 @@ public class Gerente extends Funcionario {
 			
 		} else {
 			return false;
+			
 		}
 	}
 	
-//	public double getBonificacao() {
-//		return this.salario;
-//	}	
+	@Override
+	public double getBonificacao() {
+		return super.salario;
+		
+	}	
 	
 }

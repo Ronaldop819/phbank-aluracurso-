@@ -9,9 +9,10 @@ public class TestaFuncionario {
 		novo.setCpf("03325565545");
 		novo.setSalario(3000.0);
 		
-		System.out.println("Nome do funcionário é: " + novo.getNome());
-		System.out.println("Cpf do funcionário é: " + novo.getCpf());
-		System.out.println("O salário do funcionário é: " + novo.getSalario());
+		System.out.println(novo.getNome());
+		System.out.println(novo.getBonificacao());
+		
+		
 	}
 
 }
