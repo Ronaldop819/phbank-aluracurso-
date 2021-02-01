@@ -18,11 +18,17 @@ public class TesteReferencias {
 		edv.setSalario(2500.0);
 		System.out.println("Bonificação do Editor de Vídeo: " + edv.getBonificacao());
 		
+		Programador prog = new Programador();
+		prog.setSalario(10000.0);
+		System.out.println("Bonificação do programador é: " + prog.getBonificacao());
+		
+		
 		
 		ControleBonificacao controle = new ControleBonificacao();
 		controle.registra(g2);
 		controle.registra(func);
 		controle.registra(edv);
+		controle.registra(prog);
 		
 		System.out.println("Valor total pago de bonificação para os funcionários acima " 
 		+ controle.getSoma());
